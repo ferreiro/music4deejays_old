@@ -325,119 +325,87 @@ nav ul li a
 /***
 * Slider
 **/
-#content .left .slider
+#content #featured_home 
 {
 	width: 100%;
-	height: 220px;
-	float: left;
-	background: #f1f1f1;
-	position: relative;
+	height: 300px;
 	overflow: hidden;
+	float: left;
+	clear: both;
+	background: #f4f4f4;
+}
+#content #featured_home .box
+{
+	width: 337px;
+	height: 100%;
+	background: #f1f1f1; 
+	overflow: hidden;
+	float: left;
+	position: relative;
+}  
+#content #featured_home .box .image
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	float: left;
+	top:0;
+	left: 0;
+	z-index: 0;
+}
+#content #featured_home .box .image img
+{
+	width: 100%; 
+	margin-top: -11%
+}
+#content #featured_home .box .image .gradient
+{
+	width: 100%;
+	height: 100%;
+	background: url(images/gradient_two.png) 0% 100% repeat-x;
+	position: absolute;
+	float: left;
+	top:0;
+	left: 0;
+	z-index: 0;
+}
+#content #featured_home .box a
+{
+	width: 100%; 
+	float: left; 
 } 
-#content .left .slider .image
-{
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	float: left;
-	top:0;
-	left: 0;
-	z-index: 0;
-}
-#content .left .slider .image .gradient
-{
-	width: 100%;
-	height: 100%;
-	background: url(images/gradient.png) 0% 100% repeat-x;
-	position: absolute;
-	float: left;
-	top:0;
-	left: 0;
-	z-index: 0;
-}
-#content .left .slider .image img
-{
-	width: 100%; 
-}
-#content .left .slider a
-{
-	width: 100%; 
-	float: left;
-}
-#content .left .slider .info
+#content #featured_home .box .info
 { 
 	float: left;
 	position: absolute;
-	bottom:1em;
+	bottom:0.9em;
 	left: 1em;
 	right: 1em;
 }
-#content .left .slider .info h2
+#content #featured_home .box .info h2
+{ 
+	width: 100%; 
+	float: left;
+	color: #f5f5f5;
+	font-size: 1em;
+	font-weight: normal;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.84);
+}
+#content #featured_home .box .info p
 { 
 	width: 100%; 
 	float: left;
 	color: #fff;
-	font-size: 1.2em;
+	font-size: 0.8em;
+	color: #97d135;
 	font-weight: normal;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.84);
 }
-
-/* PORTADA
---------------------------------------------------------------------------------------- */
-
-/* You might want to change these options for the main container */ 
-#slideshow, #slideshow li { height: 100%; width: 100%; } 
-/* images container - This is the most important container - Don't change important properties */ 
-#slideshow { list-style: none !important; float: left; margin: 0 !important; padding: 0 !important; overflow: hidden !important; position: relative !important; } 
-/* each slider item - Nothing to change here */ 
-#slideshow li { display: none; float: left; margin: 0; position: absolute; width: 100%; } 
-/* Don't edit this part */ 
-#slideshow li.current { display: block; z-index: 2 !important; } 
-/* Don't edit this part */ 
-#slideshow li.next { display: block; z-index: 1 !important; } 
-/* Don't edit this part - prevents inline lists from being hidden */ 
-#slideshow li ul li { display: block !important; position: relative !important; }
-#slideshow li ul li img { height: 103%; width: 0;}
-
-.slide_large { width:100%; height:350px; float:left; position:relative !important; margin: 0 !important; padding: 0 !important;  background: #282828 url(img/comun/loading.gif) 50% 50% no-repeat;
-			  background: #fff url(img/comun/loading.gif) 50% 50% no-repeat;  list-style: none !important; overflow: hidden !important; position: relative !important; }
-.slide_large ul { width:100%; height:100%; float: left; }
-.slide_large ul li { width:100%; height:100%; float: left; position: absolute; top:0; left:0; overflow: hidden; display: none;  background: #f4f4f4 url(img/comun/loading.gif) 50% 50% no-repeat; }
-.slide_large ul li img { 
-	width:auto; 
-	height: 100%;  
-}
-.slide_large ul li.current { width:100%; display: block; z-index: 2 !important; }
-.slide_large ul li.next { width:100%; display: block; z-index: 1 !important; }
-.slide_large ul li .diapo { width: 100%; height: 100%; float: left;  }
-.slide_large ul li .diapo a { width: 100%; height: 100%; float: left;  }
-.slide_large ul li .diapo .info { width: 361px; height: 100%; display: none; float: left; top:0; right: 0; position: absolute; z-index:100; }
-.slide_large ul li .diapo .info h1 { width: 100%; float: left; clear: both; font:30px "sans_regular", "arial", "tahoma"; }
-.slide_large ul li .diapo .imagen { width: 100%; height: 100%; float: left; position: absolute; z-index:20; }
-.slide_large ul li .diapo .imagen .blur_image { width: 361px; height: 100%; display: none; -khtml-opacity: 0.98; opacity: 0.98; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=98); overflow: hidden; float: left; right: 0; position: absolute; z-index:80; }
-.slide_large ul li .diapo .imagen .blur_image img { width: auto; height: 109%; margin-top: -20px; margin-right: -20px; float: right; -webkit-filter: blur(20px); -moz-filter: blur(20px); -o-filter: blur(20px); -ms-filter: blur(20px); filter: blur(20px); }
-.slide_large ul li .diapo .imagen .full_image {  width: 100%; height: 100%; float: left; left: 0; top:0; position: absolute; z-index:50; }
-.slide_large ul li .diapo .imagen .full_image img { height: 100% !important; width: auto !important;  margin-top: 0; }
-
-.slide_large .flecha_izquierda { width: 60px; height:100%; display:none ; cursor: pointer; z-index:200; position: absolute; left: 0; top:0; float: left; clear: both;   }
-.slide_large .flecha_izquierda span:hover { background-position: 0% 0%;  }
-.slide_large .flecha_izquierda span { width: 20px; height:35px; z-index:200; position: absolute; left: 20px; top:139px; float: left; clear: both;  background-image: url(img/comun/slide_flechas.png); background-position: 100% 0%; background-repeat:no-repeat;  }
-.slide_large .flecha_derecha { width: 60px; height:100%; display:none ; cursor: pointer; z-index:200; position: absolute; right: 0; top:0; float: left; clear: both;   }
-.slide_large .flecha_derecha span:hover { background-position: 100% 100%;  }
-.slide_large .flecha_derecha span { width: 20px; height:35px; z-index:200; position: absolute; left: 20px; top:139px; float: left; clear: both;  background-image: url(img/comun/slide_flechas.png); background-position: 0% 100%; background-repeat:no-repeat;  }
-
-.slide_large .controles { width: 100%; height: 50px; background: red; z-index:300; position: absolute; bottom: 0; float: left; clear: both;   }
-.slide_large .controles li, .slider_selector_dis li { display: block !important; background: url(images/slider_selector.png) no-repeat top left; background: blue; cursor: pointer; float: left; margin: 0 3px !important; height: 10px !important; position: relative !important; width: 10px !important;}
-/* Sets the current selector */
-.slide_large .controles .slider_selector li.current, .slider_selector_dis li.current { background: url(images/slider_selector_current.png) no-repeat top left; }
-/* Disables the selectors */
-.slide_large .controles .slider_selector_dis li { cursor: default !important; z-index: 5; }
-
-
 
 /***
 * Song
 **/
-#content .left .song
+#content .song
 {
 	width: 100%; 
 	float: left;
@@ -446,13 +414,13 @@ nav ul li a
 	padding-bottom: 1em;
 	border-bottom: 1px solid #d1d1d1;
 }
-#content .left .song a
+#content .song a
 {
 	width: 100%;
 	float: left;
 	-webkit-tap-highlight-color: rgba(201, 224, 253, 0);
 }
-#content .left .song .image
+#content .song .image
 {
 	margin-left: 1em;
 	width: 80px;
@@ -465,12 +433,12 @@ nav ul li a
 	border-radius: 100%;
 	z-index: 10;
 }
-#content .left .song .image img
+#content .song .image img
 {
 	height: 100%; 
 	margin: 0%; 
 }
-#content .left .song .image .gradient
+#content .song .image .gradient
 {
 	width: 100%;
 	height: 100%; 
@@ -479,7 +447,7 @@ nav ul li a
 	left: 0; 
 	background: url(images/gradient.png);
 }
-#content .left .song .info
+#content .song .info
 {
 	left: 112px;
 	right: 1em;
@@ -487,7 +455,7 @@ nav ul li a
 	float: right;
 	text-align: left;
 }
-#content .left .song .info h2
+#content .song .info h2
 {
 	width: 100%; 
 	float: left;
@@ -496,15 +464,15 @@ nav ul li a
 	font-weight: 600;
 	color: #000;
 }
-#content .left .song .info p:hover
+#content .song .info p:hover
 {
 	background: #47b900; /* #0067d0 */
 }
-#content .left .song .info p:hover a
+#content .song .info p:hover a
 {
 	color: #fff; 
 }
-#content .left .song .info p
+#content .song .info p
 {
 	width: auto; 
 	float: left;
@@ -516,17 +484,33 @@ nav ul li a
 	margin-top: 0.6em;
 	border:1px solid #47b900; /* #0067d0 */
 }
-#content .left .song .info p a
+#content .song .info p a
 {
 	width: auto;
 	float: left;
 	clear: both;
 	font-size: 0.8em;  
 }
+
+
+#content #anuncio_large
+{
+	width: 100%;
+	float: left;
+	clear: both;
+	border-top: 2px solid #f4f4f4;
+	border-bottom: 2px solid #f4f4f4;
+	margin:2em 0;
+	padding: 2em 0;
+}
+
+
+
+
 #content .right
 {
 	display: none;
-	float: right;
+	float: right; 
 }
 #content .right #anuncio
 {
@@ -560,6 +544,8 @@ nav ul li a
 	width: 100%;
 	float: left; 
 }
+
+
 #content .right .top_list li
 {
 	width: 100%;
@@ -570,7 +556,15 @@ nav ul li a
 	margin-bottom: 0; 
 	position: relative;
 }
-#content .right .top_list li a
+#content .right .top_list li:hover
+{
+	background: #f4f4f4;
+}
+#content .right .top_list li:hover .image .position
+{
+	background: #6eac16;
+}
+#content .right .top_list li a 
 {
 	width: 100%;
 	height: 100%;
@@ -597,11 +591,6 @@ nav ul li a
 	border-radius:0;
 	position: relative; 
 }
-#content .right .top_list li .image img
-{
-	width: 100%;
-	display: none;
-}
 #content .right .top_list li .image .position
 {
 	width: 25px;
@@ -614,6 +603,11 @@ nav ul li a
 	z-index: 10;
 	font-size:1em;
 	color: #fff;
+}
+#content .right .top_list li:first-child .image .position
+{ 
+	padding: 0.5em;
+	background:#76b818;  
 }
 #content .right .top_list li:nth-child(2) .image .position 
 {
@@ -643,43 +637,7 @@ nav ul li a
 { 
 	padding: 0.1em;
 	background:#8f8f8f;  
-}
-#content .right .top_list li:first-child .image .gradient
-{
-	width: 100%;
-	height: 100%;
-	float: left;  
-	top: 0;
-	left: 0;
-	background: url(images/gradient.png);
-	position: absolute;
-	z-index: 10;
-	border-radius: 100%;
-}
-#content .right .top_list li:first-child .image .position
-{
-	width: auto;
-	height: auto; 
-	float: left;  
-	bottom: -5px;
-	right: 0;
-	text-align: center;
-	background:#76b818; 
-	border-radius: 0;
-	position: absolute;
-	z-index: 10;
-	font-size:1em;
-	color: #fff;
-}
-#content .right .top_list li:first-child .info
-{
-	top: 5px;
-}
-#content .right .top_list li .image img
-{
-	width: 100%; 
-	border-radius: 100%;
-}
+} 
 #content .right .top_list li .info
 {
 	position: absolute;
@@ -697,7 +655,7 @@ nav ul li a
 	font-weight: normal;
 	color: #1a1a1a;
 }
-#content .right .box .upload_tracks
+#content .box .upload_tracks
 {
 	width: 300px;
 	height: 80px;
@@ -706,7 +664,7 @@ nav ul li a
 	clear: both;
 	border-radius: 3px;
 }
-#content .right .box .upload_tracks a
+#content .box .upload_tracks a
 { 
 	width: 180px; 
 	margin:20px 60px;
@@ -743,8 +701,20 @@ footer ul li a
 
 
 
-@media all and (max-width: 599px) {
+@media all and (max-width: 600px) {
  	
+	#content #featured_home 
+	{
+		height: 220px;
+	}
+	#content #featured_home .box:nth-child(1)
+	{
+		display: none;
+	} 
+	#content #featured_home .box:nth-child(2)
+	{
+		width: 100%;
+	} 
 	.error_wrap { 
 		margin: 2em 0; 
 	}
@@ -793,13 +763,26 @@ footer ul li a
 	{	
 		display: none;
 	}
-	#content .left .song:last-child
+	#content .song:last-child
 	{
 		margin-bottom: 0;
 	}
 }
 @media all and (max-width: 700px) { 
 	
+	#content #featured_home .box .image img
+	{
+		width: 100%; 
+		margin-top: -20%
+	}
+	#content #featured_home .box .info h2
+	{
+		font-size: 1.3em;
+	}
+	#content #featured_home .box .info p
+	{
+		font-size: 1em;
+	}
 	.error_wrap { 
 		width: 100%; 
 		height: auto; 
@@ -826,11 +809,11 @@ footer ul li a
 	{
 		display: none;
 	}
-	#content .left .song .info h2
+	#content .song .info h2
 	{
 		font-size: 1em;
 	}
-	#content .left .song .info p a
+	#content .song .info p a
 	{
 		font-size: 1em;
 	}
@@ -838,7 +821,29 @@ footer ul li a
 }
 @media all and (min-width: 601px)  and (max-width: 1029px){
 
-	#content .left .song
+
+	#content #featured_home .box .image img
+	{
+		width: 100%; 
+		margin-top: -30%
+	}
+	#content #featured_home .box:nth-child(1)
+	{
+		display: none;
+	} 
+	#content #featured_home .box:nth-child(2)
+	{
+		width: 100%;
+	} 
+	#content #featured_home .box .info h2
+	{
+		font-size: 1.3em;
+	}
+	#content #featured_home .box .info p
+	{
+		font-size: 1em;
+	}
+	#content .song
 	{
 		width: 50%;
 	}
@@ -846,25 +851,25 @@ footer ul li a
 	{ 
 		height: 350px; 
 	} 
-	#content .left .song a .image
+	#content .song a .image
 	{
 		width: 115px;
 		height: 115px;  
 	}
-	#content .left .song .info
+	#content .song .info
 	{
 		left: 145px;
 		right: 1em;
 	}
-	#content .left .song .info h2
+	#content .song .info h2
 	{
 		font-size: 1.2em;
 	}
-	#content .left .song:last-child
+	#content .song:last-child
 	{
 		margin-bottom: 0;
 	}
-	#content .left .song:nth-last-child(-n+2)
+	#content .song:nth-last-child(-n+2)
 	{
 		margin-bottom: 0;
 	}
@@ -876,12 +881,7 @@ footer ul li a
 	{
 		width: 1000px;
 		margin: 0 auto; 
-	}
-	header .container .options
-	{
-		min-width: 300px;
-		margin-right: 0; 
-	}
+	} 
 	header .container .options #search_form
 	{
 		width: 250px;
@@ -890,6 +890,7 @@ footer ul li a
 		position: relative;
 		background: transparent; 
 		float: right;
+		margin-right: 1.5em;
 	} 
 	header .container .options #search_form input
 	{
@@ -932,7 +933,7 @@ footer ul li a
 	}
 	#content .left
 	{
-		width: 665px;
+		width: 675px;
 	}
 	#content .left .slider,
 	#content .left .slide_large
@@ -945,17 +946,30 @@ footer ul li a
 		width: auto;
 		height:100%; 
 	}
-	#content .left .song
+	#content #featured_home .box:nth-child(2)
+	{
+		width: 361px;
+		border-left: 1px solid #000;
+		border-right: 1px solid #000;
+	}
+	#content #featured_home .box:nth-last-child(2),
+	#content #featured_home .box:last-child
+	{
+		width: 300px;
+		height: 50%;
+		float: right;
+	}
+	#content .song
 	{
 		width: 50%;
 		border-bottom: 0;
 		margin-bottom: 0.5em;
 	}
-	#content .left .song .image
+	#content .song .image
 	{
 		margin-left: 0;
 	}
-	#content .left .song .info
+	#content .song .info
 	{
 		left: 95px;
 		right: 0;
@@ -1031,17 +1045,34 @@ footer ul li a
 	{ 
 		height: 350px; 
 	}  
-	#content .left .song
+	#content #featured_home .box:nth-child(2) .image img
+	{
+		width: 100%; 
+		margin-top: -23%
+	}
+	#content #featured_home .box:nth-child(1)
+	{
+		width:320px;
+		border-left: 1px solid #000;
+		border-right: 1px solid #000;
+	}
+	#content #featured_home .box:nth-child(2)
+	{
+		width:676px;
+		border-left: 1px solid #000;
+		border-right: 1px solid #000;
+	}
+	#content .song
 	{
 		width: 33%;
 		border-bottom: 0;
 		margin-bottom: 0.5em;
 	}
-	#content .left .song .image
+	#content .song .image
 	{
 		margin-left: 0;
 	}
-	#content .left .song .info
+	#content .song .info
 	{
 		left: 95px;
 		right: 0;
