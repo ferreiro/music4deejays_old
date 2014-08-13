@@ -306,6 +306,16 @@ nav ul li a
 	font-weight: normal;
 	padding: 0 1em; 
 }
+#content .section_title#tag h1
+{
+	font-size: 2.7em;
+	font-weight: normal;
+}
+#content .section_title#tag h1 span
+{
+	color: #69a20a;
+	margin-right: 0.2em;
+}
 #content .section_title h1 a
 {
 	float: right;
@@ -401,7 +411,6 @@ nav ul li a
 	font-weight: normal;
 	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.84);
 }
-
 /***
 * Song
 **/
@@ -492,6 +501,56 @@ nav ul li a
 	font-size: 0.8em;  
 }
 
+/***
+* Pagination
+**/
+#content .pagination_wrap
+{
+	width: 100%;
+	float: left;
+	clear: both; 
+	margin-top: 2em;
+	margin-bottom: 1em;
+}
+#content .pagination
+{
+	margin:0 auto;
+	width: 370px;
+}
+#content .pagination .page-numbers
+{
+	float: left;
+	padding: 0.5em 0.9em; 
+	margin-right: 1em;
+	border-radius: 100%;
+	border:1px solid #bbbbbb;
+}
+#content .pagination .page-numbers:hover
+{
+	background: #f7f7f7;
+}
+#content .pagination .current
+{
+	background: #efefef;
+	color: #69a20a;
+}
+#content .pagination .last ,
+#content .pagination .next
+{
+	float: left;
+	padding: 0.5em 0.9em;
+	border:1px solid #bbbbbb;
+	margin-right: 1em;
+	border-radius: 5px;
+	color: #bbbbbb;
+}
+#content .pagination .last:hover ,
+#content .pagination .next:hover
+{
+	background: #dfdfdf; 
+	color: #1a1a1a;
+}
+
 
 #content #anuncio_large
 {
@@ -503,9 +562,6 @@ nav ul li a
 	margin:2em 0;
 	padding: 2em 0;
 }
-
-
-
 
 #content .right
 {
