@@ -4,25 +4,36 @@ $("#open_search_form").click(function() {
     return false;
 });
  
-    // Slideshow
-        
-    $('#slideshow').DDSlider({
-    
-    nextSlide: '.flecha_izquierda',
-    prevSlide: '.flecha_derecha',
-    selector: '.seleccionar_diapositiva'
-    
-    });
+$("#open_zoom").click(function() {
+    $("#modal_photo").fadeIn("fast");
+)};
+
+$("#modal_photo img").click(function() {
+    $("#modal_photo").hide(0);
+   
+)};
  
 
-    $(".slide_large").mouseenter(function() {
-        $(".slide_large .flecha_izquierda").fadeIn("slow");   // Boton pulsado
-        $(".slide_large .flecha_derecha").fadeIn("slow");   // Boton pulsado
-    });
+// Slideshow
+/*
+$('#slideshow').DDSlider({
 
-    $(".slide_large").mouseleave(function() {
-        $(".slide_large .flecha_izquierda").fadeOut("slow");   // Boton pulsado
-        $(".slide_large .flecha_derecha").fadeOut("slow");   // Boton pulsado
-    });
+nextSlide: '.flecha_izquierda',
+prevSlide: '.flecha_derecha',
+selector: '.seleccionar_diapositiva'
+
+});
+
+
+$(".slide_large").mouseenter(function() {
+    $(".slide_large .flecha_izquierda").fadeIn("slow");   // Boton pulsado
+    $(".slide_large .flecha_derecha").fadeIn("slow");   // Boton pulsado
+});
+
+$(".slide_large").mouseleave(function() {
+    $(".slide_large .flecha_izquierda").fadeOut("slow");   // Boton pulsado
+    $(".slide_large .flecha_derecha").fadeOut("slow");   // Boton pulsado
+});
+*/
 
    
